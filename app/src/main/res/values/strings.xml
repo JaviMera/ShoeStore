@@ -11,4 +11,8 @@
     <string name="welcome_message">Welcome to the Shoe Store!</string>
     <string name="sales_text">Take advantage of the sales that are going every day of the year!</string>
     <string name="button_continue_text">Continue</string>
+    <string name="instructions_title">Buying shoes is simple!</string>
+    <string name="instruction_one_text">Instruction #1</string>
+    <string name="instruction_two_text">Instruction #2</string>
+    <string name="button_goto_shoe_list_text">Go to Shoe List</string>
 </resources>
