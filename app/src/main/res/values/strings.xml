@@ -15,4 +15,6 @@
     <string name="instruction_one_text">Instruction #1</string>
     <string name="instruction_two_text">Instruction #2</string>
     <string name="button_goto_shoe_list_text">Go to Shoe List</string>
+    <string name="no_shoes_found_text">No shoes found</string>
+    <string name="fab_add_shoe_content_description">Add a shoe</string>
 </resources>
