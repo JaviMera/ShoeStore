@@ -9,4 +9,6 @@
     <string name="sign_up_text">Sign Up!</string>
     <string name="sign_in_text">Sign In</string>
     <string name="welcome_message">Welcome to the Shoe Store!</string>
+    <string name="sales_text">Take advantage of the sales that are going every day of the year!</string>
+    <string name="button_continue_text">Continue</string>
 </resources>
