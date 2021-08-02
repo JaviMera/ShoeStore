@@ -33,12 +33,6 @@ class ShoeListFragment : Fragment() {
         binding.fab.setOnClickListener{
 
             findNavController().navigate(ShoeListFragmentDirections.actionShoelistDestinationToShoeDetailFragment())
-            /*val linearLayout = binding.shoeList
-            val view = LayoutInflater.from(context).inflate(R.layout.shoe_detail, linearLayout, false)
-            val shoeDescription = view.findViewById<TextView>(R.id.shoe_description)
-            shoeDescription.text = "A nice shoe"
-            linearLayout.addView(view)
-            */
         }
         return binding.root
     }
