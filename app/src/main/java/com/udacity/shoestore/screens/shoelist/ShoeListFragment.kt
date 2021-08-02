@@ -32,9 +32,10 @@ class ShoeListFragment : Fragment() {
         binding.fab.setOnClickListener{
 
             val linearLayout = binding.shoeList
-            val textView: TextView = TextView(context)
-            textView.text = "This is a shoe"
-            linearLayout.addView(textView)
+            val view = LayoutInflater.from(context).inflate(R.layout.shoe_detail, linearLayout, false)
+            val shoeDescription = view.findViewById<TextView>(R.id.shoe_description)
+            shoeDescription.text = "A nice shoe"
+            linearLayout.addView(view)
         }
         return binding.root
     }
