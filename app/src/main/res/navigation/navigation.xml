@@ -36,5 +36,18 @@
         android:id="@+id/shoelist_destination"
         android:name="com.udacity.shoestore.screens.shoelist.ShoeListFragment"
         android:label="shoelist_fragment"
-        tools:layout="@layout/fragment_shoe_list" />
+        tools:layout="@layout/fragment_shoe_list" >
+        <action
+            android:id="@+id/action_shoelist_destination_to_shoeDetailFragment"
+            app:destination="@id/shoedetail_destination" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoedetail_destination"
+        android:name="com.udacity.shoestore.screens.shoedetail.ShoeDetailFragment"
+        android:label="shoedetail_fragment"
+        tools:layout="@layout/fragment_shoe_detail" >
+        <action
+            android:id="@+id/action_shoedetail_destination_to_shoelist_destination"
+            app:destination="@id/shoelist_destination" />
+    </fragment>
 </navigation>

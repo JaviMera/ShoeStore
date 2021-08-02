@@ -17,4 +17,14 @@
     <string name="button_goto_shoe_list_text">Go to Shoe List</string>
     <string name="no_shoes_found_text">No shoes found</string>
     <string name="fab_add_shoe_content_description">Add a shoe</string>
+    <string name="shoe_name_value">Name</string>
+    <string name="shoe_company_name_value">Company name</string>
+    <string name="shoe_size_value">size</string>
+    <string name="shoe_description_value">Description</string>
+    <string name="button_cancel_shoe">cancel</string>
+    <string name="button_save_shoe">save</string>
+    <string name="shoe_name_label">Shoe Name</string>
+    <string name="shoe_company_name_label">Shoe Company Name</string>
+    <string name="shoe_size_label">Shoe Size</string>
+    <string name="shoe_description_label">Shoe Description</string>
 </resources>

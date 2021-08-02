@@ -12,6 +12,7 @@ import androidx.core.view.MarginLayoutParamsCompat
 import androidx.core.view.marginTop
 import androidx.core.view.updateMargins
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
 
@@ -31,11 +32,13 @@ class ShoeListFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_shoe_list, container, false )
         binding.fab.setOnClickListener{
 
-            val linearLayout = binding.shoeList
+            findNavController().navigate(ShoeListFragmentDirections.actionShoelistDestinationToShoeDetailFragment())
+            /*val linearLayout = binding.shoeList
             val view = LayoutInflater.from(context).inflate(R.layout.shoe_detail, linearLayout, false)
             val shoeDescription = view.findViewById<TextView>(R.id.shoe_description)
             shoeDescription.text = "A nice shoe"
             linearLayout.addView(view)
+            */
         }
         return binding.root
     }
