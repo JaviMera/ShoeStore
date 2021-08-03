@@ -27,4 +27,7 @@
     <string name="shoe_company_name_label">Shoe Company Name</string>
     <string name="shoe_size_label">Shoe Size</string>
     <string name="shoe_description_label">Shoe Description</string>
+    <string name="shoe_detail_size_label">Size:</string>
+    <string name="shoe_detail_name_label">Name:</string>
+    <string name="shoe_detail_company_label">Company:</string>
 </resources>

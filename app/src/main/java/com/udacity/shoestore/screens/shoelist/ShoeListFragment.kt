@@ -40,8 +40,16 @@ class ShoeListFragment : Fragment() {
 
             shoes.map { shoe ->
                 val view = LayoutInflater.from(context).inflate(R.layout.shoe_detail, binding.shoeList, false)
-                val shoeDescription = view.findViewById<TextView>(R.id.shoe_description)
+                val shoeDescription = view.findViewById<TextView>(R.id.shoe_detail_description_value)
+                val shoeName = view.findViewById<TextView>(R.id.shoe_detail_name_value)
+                val shoeSize = view.findViewById<TextView>(R.id.shoe_detail_size_value)
+                val shoeCompany = view.findViewById<TextView>(R.id.shoe_detail_company_value)
+
                 shoeDescription.text = shoe.description
+                shoeName.text = shoe.name
+                shoeSize.text = shoe.size.toString()
+                shoeCompany.text = shoe.company
+
                 binding.shoeList.addView(view)
             }
         })
