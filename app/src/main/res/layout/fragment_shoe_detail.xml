@@ -5,6 +5,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".screens.shoedetail.ShoeDetailFragment">
 
+    <data>
+        <variable
+            name="shoeViewModel"
+            type="com.udacity.shoestore.viewmodels.ShoeViewModel" />
+    </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -28,6 +33,7 @@
             android:layout_margin="10dp"
             android:hint="@string/shoe_name_value"
             android:inputType="text"
+            android:text="@{shoeViewModel.newShoe.name}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/shoe_detail_title" />
@@ -51,6 +57,7 @@
             android:layout_margin="10dp"
             android:hint="@string/shoe_company_name_value"
             android:inputType="text"
+            android:text="@{shoeViewModel.newShoe.company}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/shoe_company_name_label" />
@@ -73,7 +80,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:hint="@string/shoe_size_value"
-            android:inputType="number"
+            android:inputType="numberDecimal"
+            android:text="@{shoeViewModel.newShoe.size}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/shoe_size_label" />
@@ -97,6 +105,7 @@
             android:layout_margin="10dp"
             android:hint="@string/shoe_description_value"
             android:inputType="text"
+            android:text="@{shoeViewModel.newShoe.description}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/shoe_description_label"/>

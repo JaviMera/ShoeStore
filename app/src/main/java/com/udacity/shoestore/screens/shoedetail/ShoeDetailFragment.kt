@@ -39,7 +39,7 @@ class ShoeDetailFragment : Fragment() {
 
         binding.buttonSaveShoe.setOnClickListener {
             findNavController().navigate(ShoeDetailFragmentDirections.actionShoedetailDestinationToShoelistDestination())
-            shoeViewModel.addShoe(Shoe(description = "New shoe", company = "Company", size = 10.0, name = "The best shoe in town"))
+            shoeViewModel.addShoe(shoeViewModel.newShoe)
         }
 
         return binding.root
