@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_login_destination_to_welcome_destination"
             app:destination="@id/welcome_destination" />
+        <action
+            android:id="@+id/action_login_destination_to_shoelist_destination"
+            app:destination="@id/shoelist_destination" />
     </fragment>
     <fragment
         android:id="@+id/welcome_destination"

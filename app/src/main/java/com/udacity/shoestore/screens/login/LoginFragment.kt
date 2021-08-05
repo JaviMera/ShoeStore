@@ -27,7 +27,7 @@ class LoginFragment : Fragment() {
         binding =DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false)
 
         binding.buttonSignIn.setOnClickListener {
-            findNavController().navigate(LoginFragmentDirections.actionLoginDestinationToWelcomeDestination())
+            findNavController().navigate(LoginFragmentDirections.actionLoginDestinationToShoelistDestination())
         }
 
         binding.buttonSignUp.setOnClickListener {
