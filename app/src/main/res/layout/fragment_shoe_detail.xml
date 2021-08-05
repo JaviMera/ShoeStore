@@ -8,10 +8,6 @@
     <data>
         <import type="com.udacity.shoestore.converters.Converter" />
         <variable
-            name="shoeViewModel"
-            type="com.udacity.shoestore.viewmodels.ShoeViewModel" />
-
-        <variable
             name="shoe"
             type="com.udacity.shoestore.models.Shoe" />
     </data>
