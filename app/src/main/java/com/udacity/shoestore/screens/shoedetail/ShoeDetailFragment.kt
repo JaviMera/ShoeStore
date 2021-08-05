@@ -19,7 +19,7 @@ class ShoeDetailFragment : Fragment() {
 
     private lateinit var binding: FragmentShoeDetailBinding
     private val shoeViewModel: ShoeViewModel by activityViewModels()
-    val shoe = Shoe("", 0.0, "", "")
+    var shoe = Shoe("", 0.0, "", "")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +32,13 @@ class ShoeDetailFragment : Fragment() {
 
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_detail, container, false)
         binding.lifecycleOwner = this
+
+        if (savedInstanceState != null) {
+            if(savedInstanceState.containsKey(NEW_SHOE_KEY)){
+                shoe = savedInstanceState.getParcelable(NEW_SHOE_KEY)!!
+            }
+        }
+        
         binding.shoe = shoe
 
         binding.buttonCancelShoe.setOnClickListener {
@@ -62,7 +69,16 @@ class ShoeDetailFragment : Fragment() {
         return binding.root
     }
 
-    fun showError(messageId: Int){
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.putParcelable(NEW_SHOE_KEY, shoe)
+        super.onSaveInstanceState(outState)
+    }
+
+    private fun showError(messageId: Int){
         Toast.makeText(context, getString(messageId), Toast.LENGTH_SHORT).show()
+    }
+
+    companion object{
+        const val NEW_SHOE_KEY = "SHOE_VARIABLE"
     }
 }

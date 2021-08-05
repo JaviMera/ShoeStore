@@ -8,4 +8,5 @@ import androidx.lifecycle.MutableLiveData
 import com.udacity.shoestore.BR
 import kotlinx.parcelize.Parcelize
 
-data class Shoe(var name: String = "", var size: Double = 0.0 , var company: String = "", var description: String = "")
+@Parcelize
+data class Shoe(var name: String = "", var size: Double = 0.0 , var company: String = "", var description: String = "") : Parcelable
