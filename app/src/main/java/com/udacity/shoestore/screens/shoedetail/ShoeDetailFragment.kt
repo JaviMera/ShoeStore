@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.MutableLiveData
@@ -38,10 +39,30 @@ class ShoeDetailFragment : Fragment() {
         }
 
         binding.buttonSaveShoe.setOnClickListener {
-            findNavController().navigate(ShoeDetailFragmentDirections.actionShoedetailDestinationToShoelistDestination())
-            shoeViewModel.addShoe(shoe)
+            when {
+                shoe.name.isEmpty() -> {
+                    showError(R.string.shoe_name_error)
+                }
+                shoe.company.isEmpty() -> {
+                    showError(R.string.shoe_company_error)
+                }
+                shoe.size.equals(0.0) -> {
+                    showError(R.string.shoe_size_error)
+                }
+                shoe.description.isEmpty() -> {
+                    showError(R.string.shoe_description_error)
+                }
+                else -> {
+                    shoeViewModel.addShoe(shoe)
+                    findNavController().navigate(ShoeDetailFragmentDirections.actionShoedetailDestinationToShoelistDestination())
+                }
+            }
         }
 
         return binding.root
+    }
+
+    fun showError(messageId: Int){
+        Toast.makeText(context, getString(messageId), Toast.LENGTH_SHORT).show()
     }
 }

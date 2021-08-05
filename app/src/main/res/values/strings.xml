@@ -31,4 +31,8 @@
     <string name="shoe_detail_name_label">Name:</string>
     <string name="shoe_detail_company_label">Company:</string>
     <string name="logout_title">Logout</string>
+    <string name="shoe_name_error">Enter a valid shoe name</string>
+    <string name="shoe_description_error">Enter a valid shoe description</string>
+    <string name="shoe_company_error">Enter a valid shoe company</string>
+    <string name="shoe_size_error">Enter a valid shoe size</string>
 </resources>
