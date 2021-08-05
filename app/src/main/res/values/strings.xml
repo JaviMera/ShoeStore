@@ -30,4 +30,5 @@
     <string name="shoe_detail_size_label">Size:</string>
     <string name="shoe_detail_name_label">Name:</string>
     <string name="shoe_detail_company_label">Company:</string>
+    <string name="logout_title">Logout</string>
 </resources>
