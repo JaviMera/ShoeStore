@@ -64,6 +64,7 @@
             app:layout_constraintTop_toBottomOf="@+id/password_label" />
 
         <Button
+            style="@style/shoeButtonStyle"
             android:id="@+id/button_sign_up"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -71,10 +72,6 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:text="@string/sign_up_text"
-            android:textAlignment="center"
-            android:textSize="15sp"
-            android:textColor="#FFFFFF"
-            android:background="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button_sign_in"
             app:layout_constraintHorizontal_bias="0.5"
@@ -83,15 +80,12 @@
             app:layout_constraintVertical_bias="1.0" />
 
         <Button
+            style="@style/shoeButtonStyle"
             android:id="@+id/button_sign_in"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:text="@string/sign_in_text"
-            android:textAlignment="center"
-            android:textSize="15sp"
-            android:textColor="#FFFFFF"
-            android:background="@color/colorPrimary"
             app:layout_constraintBaseline_toBaselineOf="@+id/button_sign_up"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"

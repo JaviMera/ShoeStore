@@ -16,4 +16,28 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="shoeButtonStyle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="shoeDetailTextStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="shoeOnboardingTitleText">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="shoeOnboardingTitleSubText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
 </resources>

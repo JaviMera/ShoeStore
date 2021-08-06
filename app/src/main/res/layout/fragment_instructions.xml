@@ -10,46 +10,49 @@
         android:layout_height="match_parent">
 
         <TextView
+            style="@style/shoeOnboardingTitleText"
             android:id="@+id/instructions_title"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:text="@string/instructions_title"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimary"
-            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintVertical_bias="0.3" />
 
         <TextView
+            style="@style/shoeOnboardingTitleSubText"
             android:id="@+id/instructions_one_text"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="140dp"
             android:text="@string/instruction_one_text"
-            android:textColor="@color/colorPrimary"
-            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/instructions_title" />
 
         <TextView
+            style="@style/shoeOnboardingTitleSubText"
             android:id="@+id/instructions_two_text"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="140dp"
             android:text="@string/instruction_two_text"
-            android:textColor="@color/colorPrimary"
-            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/instructions_one_text" />
 
+        <TextView
+            style="@style/shoeOnboardingTitleSubText"
+            android:id="@+id/instructions_three_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instruction_three_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instructions_two_text" />
+
         <Button
+            style="@style/shoeButtonStyle"
             android:id="@+id/button_goto_shoe_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,8 +60,6 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:text="@string/button_goto_shoe_list_text"
-            android:textColor="#FFFFFF"
-            android:background="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

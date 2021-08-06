@@ -12,8 +12,8 @@
     <string name="sales_text">Take advantage of the sales that are going every day of the year!</string>
     <string name="button_continue_text">Continue</string>
     <string name="instructions_title">Buying shoes is simple!</string>
-    <string name="instruction_one_text">Instruction #1</string>
-    <string name="instruction_two_text">Instruction #2</string>
+    <string name="instruction_one_text">Click the Add button in your list of shoes to add a new shoe</string>
+    <string name="instruction_two_text">Hit Save to add your new shoe to your inventory!</string>
     <string name="button_goto_shoe_list_text">Go to Shoe List</string>
     <string name="no_shoes_found_text">No shoes found</string>
     <string name="fab_add_shoe_content_description">Add a shoe</string>
@@ -35,4 +35,5 @@
     <string name="shoe_description_error">Enter a valid shoe description</string>
     <string name="shoe_company_error">Enter a valid shoe company</string>
     <string name="shoe_size_error">Enter a valid shoe size</string>
+    <string name="instruction_three_text">It is that simple!</string>
 </resources>
